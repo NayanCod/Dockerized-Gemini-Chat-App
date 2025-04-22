@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dockerized",
+  title: "gemini-chat",
   description: "containerized withh docker",
 };
 
