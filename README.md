@@ -2,7 +2,7 @@
 
 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/NayanCod/Dockerized-Gemini-Chat-App.git
 cd nextjs-docker
 ```
 
@@ -13,7 +13,7 @@ npm install
 
 3. Create a `.env` file in the root directory
 ```bash
-echo "NEXT_PUBLIC_GEMINI=<your gemini key>" > .env
+NEXT_PUBLIC_GEMINI=<your gemini key>
 ```
 
 4. Start development server
