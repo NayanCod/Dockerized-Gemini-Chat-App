@@ -80,7 +80,7 @@ const GeminiChat = () => {
         Chat with me
       </h1>
       <form
-        className="flex flex-row items-center gap-4 w-1/2"
+        className="flex flex-row items-center gap-4 w-full md:w-1/2"
         onSubmit={handleASk}
       >
         <input
@@ -90,12 +90,12 @@ const GeminiChat = () => {
           value={text}
           onChange={(e) => settext(e.target.value)}
         />
-        <button className="border-2 border-gray-300 rounded-md p-2 cursor-pointer">
+        <button type="submit" className="border-2 border-gray-300 rounded-md p-2 cursor-pointer">
           Ask
         </button>
       </form>
       <p className={`${error ? "block" : "hidden"} text-reed-500`}>{error}</p>
-      <div className="w-1/2 h-[500px] max-h-[500px] overflow-y-auto border border-gray-300 p-8">
+      <div className="md:w-1/2 h-[500px] max-h-[500px] overflow-y-auto border border-gray-300 p-8 rounded-2xl">
         {response.length > 0 &&
           response.map((chat, idx) => {
             return (
