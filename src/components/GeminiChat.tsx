@@ -86,7 +86,7 @@ const GeminiChat = () => {
         <input
           type="text"
           className="border-2 border-gray-300 rounded-md p-2 w-full"
-          placeholder="Search..."
+          placeholder="Lets talk..."
           value={text}
           onChange={(e) => settext(e.target.value)}
         />
